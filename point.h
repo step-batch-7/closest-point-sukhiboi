@@ -15,6 +15,11 @@ Location of organism: [36 27],  Closest food target : [55 38]
 
 #define ORGANISM_INITIAL_POSITION {1,1}
 #define FOOD_LOCATIONS {{18, 76}, {19, 66}, {89, 57}, {9, 71}, {55, 38}}
+#define LENGTH_OF(array) sizeof(array)/sizeof(array[0])
+#define CURRENT_POSITION current_position.x, current_position.y
+#define CLOSEST_FOOD_LOCATION closest_food_location.x, closest_food_location.y
+#define UPDATE_CLOSEST_FOOD_LOCATION closest_food_location->x = food_points[i].x; closest_food_location->y = food_points[i].y;
+#define FOR_LOOP(times) for (int i = 0; i < times; i++)
 typedef struct
 {
 int x;
