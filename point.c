@@ -1,5 +1,4 @@
 #include "point.h"
-#include <stdio.h>
 #include <math.h>
 
 double distance_between(Point, Point);
