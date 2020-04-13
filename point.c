@@ -17,8 +17,7 @@ void get_closest_point(Point food_points[], int points_length, Point current_loc
         if (distance_to_other_food < distance_to_current_food)
         {
             distance_to_current_food = distance_to_other_food;
-            closest_food_location->x = food_points[i].x;
-            closest_food_location->y = food_points[i].y;
+            *closest_food_location = food_points[i];
         }
     }
 }
